@@ -2,7 +2,7 @@ package lambda;
 
 import java.util.function.Supplier;
 
-public class ExerciceSupplier {
+public class ExerciceS {
     public static void main(String[] args) {
 
         // Supplier : ne prend aucun argument (), mais retourne un résultat
