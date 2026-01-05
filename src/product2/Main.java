@@ -2,7 +2,7 @@ package product2;
 
 import java.util.Arrays;
 import java.util.List;
-import java.util.Map; // ضروري
+import java.util.Map;
 import java.util.stream.Collectors;
 
 public class Main {
@@ -17,14 +17,12 @@ public class Main {
                 new Produit(6, "Table", 900, "Meuble")
         );
 
-        // هنا السحر كلو: GroupingBy
         Map<String, List<Produit>> groups = stock.stream()
                 .collect(Collectors.groupingBy(p -> p.getCategorie()));
 
-        // نشوفو النتيجة
+
         System.out.println(groups);
 
-        // غير باش نوريك كيفاش تقرا النتيجة بوضوح (ماشي ضروري تكتبها)
         groups.forEach((categorie, produits) -> {
             System.out.println("القسم: " + categorie);
             System.out.println("   السلعة: " + produits);

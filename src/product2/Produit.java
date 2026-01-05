@@ -17,7 +17,12 @@ public class Produit {
 
     public String getNom() { return nom; }
     public double getPrix() { return prix; }
-    public String getCategorie() { return categorie; }
+    public String getCategorie() {
+        return categorie;}
+
+    public void method (){
+        this.
+    }
 
 
     @Override
